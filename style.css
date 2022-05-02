@@ -20,4 +20,96 @@ body {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--Light_Gray);
+}
+footer {
+  text-align: center;
+}
+main {
+  width: 90%;
+  box-shadow: 0px 10px 20px 11px rgba(211, 208, 208, 0.66);
+  -webkit-box-shadow: 0px 10px 20px 11px rgba(211, 208, 208, 0.66);
+  -moz-box-shadow: 0px 10px 20px 11px rgba(211, 208, 208, 0.66);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+main > div {
+  padding: 1rem;
+}
+h1 {
+  color: var(--Cyan);
+  font-size: 1.25rem;
+}
+.first-card {
+  background-color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.title {
+  font-weight: 700;
+}
+.first-card > .title {
+  color: var(--Bright_Yellow);
+}
+.first-card > .title + p {
+  color: var(--Grayish_Blue);
+  font-size: 16px;
+}
+.second-card {
+  background-color: var(--Cyan);
+}
+.second-card > .title,
+.second-card > p,
+.price {
+  color: var(--Light_Gray);
+}
+.price {
+  font-size: 2rem;
+}
+.time {
+  color: var(--Grayish_Blue);
+  font-weight: 400;
+}
+.second-card .price-detail + p {
+  margin-top: 0;
+}
+.signup {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+button {
+  width: 100%;
+  padding: 1rem 0;
+  border: none;
+  font-weight: 700;
+  color: var(--Light_Gray);
+  background-color: var(--Bright_Yellow);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0px 10px 20px -20px rgba(0, 0, 0, 0.66);
+  -webkit-box-shadow: 0px 10px 20px -20px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 10px 20px -20px rgba(0, 0, 0, 0.66);
+}
+.third-card {
+  background-color: hsla(179, 62%, 43%, 0.7);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.third-card .title {
+  color: #fff;
+}
+ul {
+  color: var(--Light_Gray);
+  font-weight: 400;
+  list-style-type: none;
+}
+ul > li {
+  margin-left: -2.5rem;
+  font-size: 0.8rem;
 }
