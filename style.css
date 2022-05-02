@@ -50,6 +50,7 @@ h1 {
 }
 .title {
   font-weight: 700;
+  font-size: 1.1rem;
 }
 .first-card > .title {
   color: var(--Bright_Yellow);
@@ -70,7 +71,7 @@ h1 {
   font-size: 2rem;
 }
 .time {
-  color: var(--Grayish_Blue);
+  color: gray;
   font-weight: 400;
 }
 .second-card .price-detail + p {
@@ -96,6 +97,9 @@ button {
   -webkit-box-shadow: 0px 10px 20px -20px rgba(0, 0, 0, 0.66);
   -moz-box-shadow: 0px 10px 20px -20px rgba(0, 0, 0, 0.66);
 }
+button:hover {
+  cursor: pointer;
+}
 .third-card {
   background-color: hsla(179, 62%, 43%, 0.7);
   border-bottom-left-radius: 8px;
@@ -112,4 +116,30 @@ ul {
 ul > li {
   margin-left: -2.5rem;
   font-size: 0.8rem;
+}
+
+@media (min-width: 720px) {
+  main {
+    width: 650px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    grid-template-areas: "first first" "second third";
+  }
+  main > div {
+    padding: 3rem;
+  }
+  .first-card {
+    grid-area: first;
+  }
+  .second-card {
+    grid-area: second;
+    border-bottom-left-radius: 8px;
+  }
+  .third-card {
+    grid-area: third;
+    border-bottom-left-radius: 0px;
+  }
 }
